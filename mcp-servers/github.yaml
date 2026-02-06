@@ -1,0 +1,38 @@
+slug: github
+name: GitHub
+description: Interact with GitHub repositories, issues, pull requests, and more
+author: GitHub
+authorUrl: https://github.com/github
+githubUrl: https://github.com/modelcontextprotocol/servers/tree/main/src/github
+category: devtools
+tags:
+  - github
+  - git
+  - repositories
+  - issues
+  - pull-requests
+  - official
+transport:
+  - stdio
+features:
+  - Repository management
+  - Issue tracking
+  - Pull request operations
+  - Code search
+  - Branch management
+compatibility:
+  - claude-code
+  - cursor
+  - vscode
+  - windsurf
+configSnippet:
+  mcpServers:
+    github:
+      command: npx
+      args:
+        - -y
+        - "@modelcontextprotocol/server-github"
+      env:
+        GITHUB_PERSONAL_ACCESS_TOKEN: <your-token>
+createdAt: 2024-11-25
+updatedAt: 2026-01-20

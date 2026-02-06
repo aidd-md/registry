@@ -1,0 +1,68 @@
+name: Registry CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    name: Validate & Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Validate entries
+        run: pnpm validate
+
+      - name: Build registry
+        run: pnpm build
+
+      - name: Verify dist files exist
+        run: |
+          test -f dist/mcp-servers.json || (echo "Missing dist/mcp-servers.json" && exit 1)
+          test -f dist/content.json || (echo "Missing dist/content.json" && exit 1)
+
+  publish:
+    name: Publish dist/
+    needs: validate
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Build registry
+        run: pnpm build
+
+      - name: Commit dist/ if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add dist/
+          git diff --staged --quiet || git commit -m "chore: rebuild dist/ [skip ci]"
+          git push

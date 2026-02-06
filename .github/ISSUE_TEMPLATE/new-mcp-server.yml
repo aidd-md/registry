@@ -1,0 +1,50 @@
+name: New MCP Server
+description: Request adding a new MCP server to the registry
+title: "[MCP Server] "
+labels: ["new-entry", "mcp-server"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Server Name
+      placeholder: "e.g., My MCP Server"
+    validations:
+      required: true
+  - type: input
+    id: github-url
+    attributes:
+      label: GitHub URL
+      placeholder: "https://github.com/..."
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - ai-llm
+        - database
+        - browser
+        - cloud
+        - devtools
+        - communication
+        - file-system
+        - search
+        - monitoring
+        - security
+        - other
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      placeholder: "Brief description of what this server does"
+    validations:
+      required: true
+  - type: textarea
+    id: config
+    attributes:
+      label: Configuration Snippet
+      description: JSON config for installing this server
+      render: json

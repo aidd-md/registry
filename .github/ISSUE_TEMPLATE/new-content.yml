@@ -1,0 +1,38 @@
+name: New Content Entry
+description: Request adding new AIDD content (skill, rule, workflow, etc.)
+title: "[Content] "
+labels: ["new-entry", "content"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Entry Name
+      placeholder: "e.g., My Custom Skill"
+    validations:
+      required: true
+  - type: dropdown
+    id: content-type
+    attributes:
+      label: Content Type
+      options:
+        - agent
+        - skill
+        - workflow
+        - rule
+        - template
+        - knowledge
+        - spec
+    validations:
+      required: true
+  - type: input
+    id: github-url
+    attributes:
+      label: GitHub URL
+      placeholder: "https://github.com/..."
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      placeholder: "Brief description of this content"
+    validations:
+      required: true

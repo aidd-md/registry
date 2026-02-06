@@ -1,0 +1,31 @@
+slug: sequential-thinking
+name: Sequential Thinking
+description: Dynamic, reflective problem-solving through structured thought sequences
+author: Anthropic
+githubUrl: https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking
+category: ai-llm
+tags:
+  - reasoning
+  - thinking
+  - problem-solving
+  - official
+transport:
+  - stdio
+features:
+  - Structured reasoning
+  - Thought revision
+  - Branch exploration
+  - Hypothesis adjustment
+compatibility:
+  - claude-code
+  - cursor
+  - vscode
+configSnippet:
+  mcpServers:
+    sequential-thinking:
+      command: npx
+      args:
+        - -y
+        - "@modelcontextprotocol/server-sequential-thinking"
+createdAt: 2025-01-15
+updatedAt: 2026-01-20

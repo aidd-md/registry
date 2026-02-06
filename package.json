@@ -1,0 +1,20 @@
+{
+  "name": "@aidd.md/registry",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Community registry for MCP servers and AIDD content",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "validate": "node scripts/validate.mjs",
+    "seed": "node scripts/seed.mjs"
+  },
+  "devDependencies": {
+    "yaml": "^2.7.0",
+    "gray-matter": "^4.0.3",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "glob": "^11.0.1"
+  },
+  "license": "MIT"
+}

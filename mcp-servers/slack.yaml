@@ -1,0 +1,33 @@
+slug: slack
+name: Slack
+description: Read and send messages, manage channels in Slack workspaces
+author: Anthropic
+githubUrl: https://github.com/modelcontextprotocol/servers/tree/main/src/slack
+category: communication
+tags:
+  - slack
+  - messaging
+  - channels
+  - official
+transport:
+  - stdio
+features:
+  - Send messages
+  - Read channels
+  - List users
+  - Search messages
+compatibility:
+  - claude-code
+  - cursor
+  - vscode
+configSnippet:
+  mcpServers:
+    slack:
+      command: npx
+      args:
+        - -y
+        - "@modelcontextprotocol/server-slack"
+      env:
+        SLACK_BOT_TOKEN: <your-token>
+createdAt: 2024-12-01
+updatedAt: 2026-01-10
