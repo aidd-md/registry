@@ -9,7 +9,7 @@ This repository is the data source for the [AIDD Hub](https://github.com/DerianA
 
 ## How It Works
 
-1. Contributors add entries as individual files (YAML for MCP servers, Markdown for content)
+1. Contributors add entries as individual Markdown files with YAML frontmatter
 2. GitHub Actions validates and builds the registry on every PR
 3. Built JSON files are committed to `dist/` and served via GitHub raw URLs
 4. The AIDD Hub fetches these files to populate the Marketplace
@@ -18,14 +18,14 @@ This repository is the data source for the [AIDD Hub](https://github.com/DerianA
 
 | Directory | Content |
 |-----------|---------|
-| [`mcp-servers/`](mcp-servers/) | MCP server entries (`.yaml`) |
+| [`content/mcps/`](content/mcps/) | MCP server entries |
 | [`content/agents/`](content/agents/) | Agent definitions |
 | [`content/skills/`](content/skills/) | Reusable skills |
 | [`content/rules/`](content/rules/) | Domain rules |
 | [`content/workflows/`](content/workflows/) | Multi-step workflows |
 | [`content/templates/`](content/templates/) | Task templates |
 | [`content/knowledge/`](content/knowledge/) | Technology knowledge base |
-| [`content/spec/`](content/spec/) | AIDD specifications |
+| [`content/specs/`](content/specs/) | AIDD specifications |
 
 ## Contributing
 

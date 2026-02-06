@@ -1,0 +1,44 @@
+---
+slug: cloudflare
+name: Cloudflare
+description: Manage Cloudflare Workers, KV, R2, and D1 resources
+author: Cloudflare
+authorUrl: https://github.com/cloudflare
+githubUrl: https://github.com/cloudflare/mcp-server-cloudflare
+tags:
+  - cloudflare
+  - workers
+  - kv
+  - r2
+  - d1
+  - edge
+compatibility:
+  - claude-code
+  - cursor
+  - vscode
+category: cloud
+transport:
+  - stdio
+features:
+  - Workers management
+  - KV store operations
+  - R2 storage
+  - D1 database
+  - DNS management
+configSnippet:
+  mcpServers:
+    cloudflare:
+      command: npx
+      args:
+        - -y
+        - "@cloudflare/mcp-server-cloudflare"
+      env:
+        CLOUDFLARE_API_TOKEN: <your-token>
+createdAt: 2025-01-20
+updatedAt: 2026-01-15
+contentType: mcp-server
+---
+
+# Cloudflare
+
+Workers, KV store, R2 storage, D1 database, and DNS management.

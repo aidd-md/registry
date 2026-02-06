@@ -4,13 +4,15 @@ Thank you for contributing! This guide explains how to add new entries to the re
 
 ## Adding an MCP Server
 
-1. Create a new file in `mcp-servers/` named `your-server-slug.yaml`
+1. Create a new file in `content/mcps/` named `your-server-slug.md`
 2. Use this template:
 
-```yaml
+```markdown
+---
 slug: your-server-slug
 name: Your Server Name
 description: A brief one-line description
+contentType: mcp-server
 author: Your Name
 authorUrl: https://github.com/yourname
 githubUrl: https://github.com/yourname/your-mcp-server
@@ -33,6 +35,11 @@ configSnippet:
     args:
       - -y
       - your-mcp-package
+---
+
+# Your Server Name
+
+Your detailed description in Markdown.
 ```
 
 3. Open a Pull Request
@@ -40,7 +47,7 @@ configSnippet:
 ## Adding Content (Skills, Rules, Workflows, etc.)
 
 1. Create a new file in `content/{type}/` named `your-entry-slug.md`
-   - Types: `agents`, `skills`, `rules`, `workflows`, `templates`, `knowledge`, `spec`
+   - Types: `agents`, `skills`, `rules`, `workflows`, `templates`, `knowledge`, `specs`
 2. Use this template:
 
 ```markdown
@@ -78,14 +85,14 @@ Your detailed description in Markdown.
 - **Slug**: Must be unique, lowercase, kebab-case (e.g., `my-cool-server`)
 - **Description**: One line, under 120 characters
 - **Tags**: 2-6 relevant tags
-- **Category**: Must be one of the valid categories listed above
+- **Category**: Must be one of the valid categories listed above (MCP servers only)
 - **Compatibility**: List the AI agents/editors that support your entry
 
 ## Validation
 
 PRs are automatically validated. Common issues:
 
-- Missing required fields (slug, name, description, author)
+- Missing required fields (slug, name, description, author, contentType)
 - Duplicate slug (already exists in the registry)
 - Invalid category or content type
 - YAML/frontmatter syntax errors

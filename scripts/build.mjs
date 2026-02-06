@@ -1,12 +1,11 @@
 // ---------------------------------------------------------------------------
-// Build script: compiles YAML + Markdown entries into dist/*.json
+// Build script: compiles content/**/*.md entries into dist/*.json
 // ---------------------------------------------------------------------------
 
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
-import { join, basename } from 'node:path';
+import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { glob } from 'glob';
-import YAML from 'yaml';
 import matter from 'gray-matter';
 
 const ROOT = join(fileURLToPath(import.meta.url), '..', '..');
@@ -34,60 +33,23 @@ function coerceDates(obj) {
   return obj;
 }
 
-// ── Build MCP Servers ────────────────────────────────────────────
+// ── Build all entries from content/**/*.md ───────────────────────
 
-function buildMcpServers() {
-  const pattern = join(ROOT, 'mcp-servers', '*.yaml').replace(/\\/g, '/');
-  const files = glob.sync(pattern);
-  const entries = [];
-
-  for (const file of files) {
-    const raw = readFileSync(file, 'utf-8');
-    const data = coerceDates(YAML.parse(raw));
-
-    entries.push({
-      type: 'mcp-server',
-      slug: data.slug,
-      name: data.name,
-      description: data.description,
-      longDescription: data.longDescription || undefined,
-      author: data.author,
-      authorUrl: data.authorUrl || undefined,
-      githubUrl: data.githubUrl || undefined,
-      npmPackage: data.npmPackage || undefined,
-      category: data.category,
-      tags: data.tags || [],
-      transport: data.transport || ['stdio'],
-      features: data.features || [],
-      installCount: 0,
-      trending: data.trending || false,
-      official: isOfficial(data.githubUrl),
-      createdAt: data.createdAt || now(),
-      updatedAt: data.updatedAt || now(),
-      configSnippet: data.configSnippet || {},
-      compatibility: data.compatibility || [],
-    });
-  }
-
-  entries.sort((a, b) => a.slug.localeCompare(b.slug));
-  return entries;
-}
-
-// ── Build Content ────────────────────────────────────────────────
-
-function buildContent() {
+function buildEntries() {
   const pattern = join(ROOT, 'content', '**', '*.md').replace(/\\/g, '/');
   const files = glob.sync(pattern);
-  const entries = [];
+  const mcpServers = [];
+  const content = [];
 
   for (const file of files) {
     const raw = readFileSync(file, 'utf-8');
     const parsed = matter(raw);
     const data = coerceDates(parsed.data);
     const markdownContent = parsed.content.trim();
+    const isMcp = data.contentType === 'mcp-server';
 
-    entries.push({
-      type: 'content',
+    const entry = {
+      type: isMcp ? 'mcp-server' : 'content',
       slug: data.slug,
       name: data.name,
       description: data.description,
@@ -95,21 +57,33 @@ function buildContent() {
       author: data.author,
       authorUrl: data.authorUrl || undefined,
       githubUrl: data.githubUrl || undefined,
-      contentType: data.contentType,
       tags: data.tags || [],
       installCount: 0,
       trending: data.trending || false,
       official: isOfficial(data.githubUrl),
       createdAt: data.createdAt || now(),
       updatedAt: data.updatedAt || now(),
-      markdownContent,
-      installCommand: data.installCommand || undefined,
       compatibility: data.compatibility || [],
-    });
+    };
+
+    if (isMcp) {
+      entry.npmPackage = data.npmPackage || undefined;
+      entry.category = data.category;
+      entry.transport = data.transport || ['stdio'];
+      entry.features = data.features || [];
+      entry.configSnippet = data.configSnippet || {};
+      mcpServers.push(entry);
+    } else {
+      entry.contentType = data.contentType;
+      entry.markdownContent = markdownContent;
+      entry.installCommand = data.installCommand || undefined;
+      content.push(entry);
+    }
   }
 
-  entries.sort((a, b) => a.slug.localeCompare(b.slug));
-  return entries;
+  mcpServers.sort((a, b) => a.slug.localeCompare(b.slug));
+  content.sort((a, b) => a.slug.localeCompare(b.slug));
+  return { mcpServers, content };
 }
 
 // ── Main ─────────────────────────────────────────────────────────
@@ -119,8 +93,7 @@ function main() {
     mkdirSync(DIST, { recursive: true });
   }
 
-  const mcpServers = buildMcpServers();
-  const content = buildContent();
+  const { mcpServers, content } = buildEntries();
 
   const mcpResponse = {
     version: VERSION,

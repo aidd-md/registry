@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updatedAt": "2026-02-06T21:42:36.120Z",
+  "updatedAt": "2026-02-06T21:54:37.143Z",
   "entries": [
     {
       "type": "mcp-server",
@@ -9,13 +9,23 @@
       "description": "Web and local search using the Brave Search API",
       "author": "Anthropic",
       "githubUrl": "https://github.com/modelcontextprotocol/servers/tree/main/src/brave-search",
-      "category": "search",
       "tags": [
         "search",
         "web",
         "brave",
         "official"
       ],
+      "installCount": 0,
+      "trending": false,
+      "official": false,
+      "createdAt": "2024-11-25",
+      "updatedAt": "2026-01-10",
+      "compatibility": [
+        "claude-code",
+        "cursor",
+        "vscode"
+      ],
+      "category": "search",
       "transport": [
         "stdio"
       ],
@@ -25,11 +35,6 @@
         "News search",
         "Image search"
       ],
-      "installCount": 0,
-      "trending": false,
-      "official": false,
-      "createdAt": "2024-11-25",
-      "updatedAt": "2026-01-10",
       "configSnippet": {
         "mcpServers": {
           "brave-search": {
@@ -43,12 +48,7 @@
             }
           }
         }
-      },
-      "compatibility": [
-        "claude-code",
-        "cursor",
-        "vscode"
-      ]
+      }
     },
     {
       "type": "mcp-server",
@@ -58,7 +58,6 @@
       "author": "Cloudflare",
       "authorUrl": "https://github.com/cloudflare",
       "githubUrl": "https://github.com/cloudflare/mcp-server-cloudflare",
-      "category": "cloud",
       "tags": [
         "cloudflare",
         "workers",
@@ -67,6 +66,17 @@
         "d1",
         "edge"
       ],
+      "installCount": 0,
+      "trending": false,
+      "official": false,
+      "createdAt": "2025-01-20",
+      "updatedAt": "2026-01-15",
+      "compatibility": [
+        "claude-code",
+        "cursor",
+        "vscode"
+      ],
+      "category": "cloud",
       "transport": [
         "stdio"
       ],
@@ -77,11 +87,6 @@
         "D1 database",
         "DNS management"
       ],
-      "installCount": 0,
-      "trending": false,
-      "official": false,
-      "createdAt": "2025-01-20",
-      "updatedAt": "2026-01-15",
       "configSnippet": {
         "mcpServers": {
           "cloudflare": {
@@ -95,12 +100,7 @@
             }
           }
         }
-      },
-      "compatibility": [
-        "claude-code",
-        "cursor",
-        "vscode"
-      ]
+      }
     },
     {
       "type": "mcp-server",
@@ -110,13 +110,24 @@
       "author": "Upstash",
       "authorUrl": "https://github.com/upstash",
       "githubUrl": "https://github.com/upstash/context7",
-      "category": "devtools",
       "tags": [
         "documentation",
         "docs",
         "libraries",
         "code-examples"
       ],
+      "installCount": 0,
+      "trending": false,
+      "official": false,
+      "createdAt": "2025-04-01",
+      "updatedAt": "2026-01-25",
+      "compatibility": [
+        "claude-code",
+        "cursor",
+        "vscode",
+        "windsurf"
+      ],
+      "category": "devtools",
       "transport": [
         "stdio"
       ],
@@ -126,11 +137,6 @@
         "Version-aware docs",
         "API reference"
       ],
-      "installCount": 0,
-      "trending": false,
-      "official": false,
-      "createdAt": "2025-04-01",
-      "updatedAt": "2026-01-25",
       "configSnippet": {
         "mcpServers": {
           "context7": {
@@ -141,13 +147,7 @@
             ]
           }
         }
-      },
-      "compatibility": [
-        "claude-code",
-        "cursor",
-        "vscode",
-        "windsurf"
-      ]
+      }
     },
     {
       "type": "mcp-server",
@@ -157,13 +157,23 @@
       "author": "Exa",
       "authorUrl": "https://github.com/exa-labs",
       "githubUrl": "https://github.com/exa-labs/exa-mcp-server",
-      "category": "search",
       "tags": [
         "search",
         "web",
         "ai",
         "content-extraction"
       ],
+      "installCount": 0,
+      "trending": false,
+      "official": false,
+      "createdAt": "2025-01-10",
+      "updatedAt": "2026-01-15",
+      "compatibility": [
+        "claude-code",
+        "cursor",
+        "vscode"
+      ],
+      "category": "search",
       "transport": [
         "stdio"
       ],
@@ -173,11 +183,6 @@
         "Similar page finding",
         "Keyword search"
       ],
-      "installCount": 0,
-      "trending": false,
-      "official": false,
-      "createdAt": "2025-01-10",
-      "updatedAt": "2026-01-15",
       "configSnippet": {
         "mcpServers": {
           "exa": {
@@ -191,12 +196,7 @@
             }
           }
         }
-      },
-      "compatibility": [
-        "claude-code",
-        "cursor",
-        "vscode"
-      ]
+      }
     },
     {
       "type": "mcp-server",
@@ -206,13 +206,24 @@
       "author": "Anthropic",
       "authorUrl": "https://github.com/anthropics",
       "githubUrl": "https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem",
-      "category": "file-system",
       "tags": [
         "filesystem",
         "files",
         "directories",
         "official"
       ],
+      "installCount": 0,
+      "trending": false,
+      "official": false,
+      "createdAt": "2024-11-25",
+      "updatedAt": "2026-01-15",
+      "compatibility": [
+        "claude-code",
+        "cursor",
+        "vscode",
+        "windsurf"
+      ],
+      "category": "file-system",
       "transport": [
         "stdio"
       ],
@@ -223,11 +234,6 @@
         "Search files",
         "Move/copy files"
       ],
-      "installCount": 0,
-      "trending": false,
-      "official": false,
-      "createdAt": "2024-11-25",
-      "updatedAt": "2026-01-15",
       "configSnippet": {
         "mcpServers": {
           "filesystem": {
@@ -239,13 +245,7 @@
             ]
           }
         }
-      },
-      "compatibility": [
-        "claude-code",
-        "cursor",
-        "vscode",
-        "windsurf"
-      ]
+      }
     },
     {
       "type": "mcp-server",
@@ -255,7 +255,6 @@
       "author": "GitHub",
       "authorUrl": "https://github.com/github",
       "githubUrl": "https://github.com/modelcontextprotocol/servers/tree/main/src/github",
-      "category": "devtools",
       "tags": [
         "github",
         "git",
@@ -264,6 +263,18 @@
         "pull-requests",
         "official"
       ],
+      "installCount": 0,
+      "trending": false,
+      "official": false,
+      "createdAt": "2024-11-25",
+      "updatedAt": "2026-01-20",
+      "compatibility": [
+        "claude-code",
+        "cursor",
+        "vscode",
+        "windsurf"
+      ],
+      "category": "devtools",
       "transport": [
         "stdio"
       ],
@@ -274,11 +285,6 @@
         "Code search",
         "Branch management"
       ],
-      "installCount": 0,
-      "trending": false,
-      "official": false,
-      "createdAt": "2024-11-25",
-      "updatedAt": "2026-01-20",
       "configSnippet": {
         "mcpServers": {
           "github": {
@@ -292,13 +298,7 @@
             }
           }
         }
-      },
-      "compatibility": [
-        "claude-code",
-        "cursor",
-        "vscode",
-        "windsurf"
-      ]
+      }
     },
     {
       "type": "mcp-server",
@@ -308,13 +308,23 @@
       "author": "Linear",
       "authorUrl": "https://github.com/linear",
       "githubUrl": "https://github.com/linear/linear-mcp-server",
-      "category": "devtools",
       "tags": [
         "linear",
         "issues",
         "project-management",
         "agile"
       ],
+      "installCount": 0,
+      "trending": false,
+      "official": false,
+      "createdAt": "2025-03-05",
+      "updatedAt": "2026-01-20",
+      "compatibility": [
+        "claude-code",
+        "cursor",
+        "vscode"
+      ],
+      "category": "devtools",
       "transport": [
         "stdio"
       ],
@@ -325,11 +335,6 @@
         "List projects",
         "Team management"
       ],
-      "installCount": 0,
-      "trending": false,
-      "official": false,
-      "createdAt": "2025-03-05",
-      "updatedAt": "2026-01-20",
       "configSnippet": {
         "mcpServers": {
           "linear": {
@@ -343,12 +348,7 @@
             }
           }
         }
-      },
-      "compatibility": [
-        "claude-code",
-        "cursor",
-        "vscode"
-      ]
+      }
     },
     {
       "type": "mcp-server",
@@ -358,7 +358,6 @@
       "author": "Neon",
       "authorUrl": "https://github.com/neondatabase",
       "githubUrl": "https://github.com/neondatabase/mcp-server-neon",
-      "category": "database",
       "tags": [
         "neon",
         "postgres",
@@ -366,6 +365,17 @@
         "database",
         "branching"
       ],
+      "installCount": 0,
+      "trending": false,
+      "official": false,
+      "createdAt": "2025-03-01",
+      "updatedAt": "2026-01-20",
+      "compatibility": [
+        "claude-code",
+        "cursor",
+        "vscode"
+      ],
+      "category": "database",
       "transport": [
         "stdio"
       ],
@@ -375,11 +385,6 @@
         "Schema management",
         "Autoscaling control"
       ],
-      "installCount": 0,
-      "trending": false,
-      "official": false,
-      "createdAt": "2025-03-01",
-      "updatedAt": "2026-01-20",
       "configSnippet": {
         "mcpServers": {
           "neon": {
@@ -393,12 +398,7 @@
             }
           }
         }
-      },
-      "compatibility": [
-        "claude-code",
-        "cursor",
-        "vscode"
-      ]
+      }
     },
     {
       "type": "mcp-server",
@@ -408,13 +408,23 @@
       "author": "Microsoft",
       "authorUrl": "https://github.com/microsoft",
       "githubUrl": "https://github.com/microsoft/playwright-mcp",
-      "category": "browser",
       "tags": [
         "browser",
         "automation",
         "testing",
         "playwright"
       ],
+      "installCount": 0,
+      "trending": false,
+      "official": false,
+      "createdAt": "2025-03-10",
+      "updatedAt": "2026-01-22",
+      "compatibility": [
+        "claude-code",
+        "cursor",
+        "vscode"
+      ],
+      "category": "browser",
       "transport": [
         "stdio"
       ],
@@ -425,11 +435,6 @@
         "Multi-browser support",
         "Network interception"
       ],
-      "installCount": 0,
-      "trending": false,
-      "official": false,
-      "createdAt": "2025-03-10",
-      "updatedAt": "2026-01-22",
       "configSnippet": {
         "mcpServers": {
           "playwright": {
@@ -440,12 +445,7 @@
             ]
           }
         }
-      },
-      "compatibility": [
-        "claude-code",
-        "cursor",
-        "vscode"
-      ]
+      }
     },
     {
       "type": "mcp-server",
@@ -454,13 +454,23 @@
       "description": "Read-only access to PostgreSQL databases with schema inspection",
       "author": "Anthropic",
       "githubUrl": "https://github.com/modelcontextprotocol/servers/tree/main/src/postgres",
-      "category": "database",
       "tags": [
         "database",
         "postgresql",
         "sql",
         "official"
       ],
+      "installCount": 0,
+      "trending": false,
+      "official": false,
+      "createdAt": "2024-11-25",
+      "updatedAt": "2026-01-12",
+      "compatibility": [
+        "claude-code",
+        "cursor",
+        "vscode"
+      ],
+      "category": "database",
       "transport": [
         "stdio"
       ],
@@ -470,11 +480,6 @@
         "Table listing",
         "Index info"
       ],
-      "installCount": 0,
-      "trending": false,
-      "official": false,
-      "createdAt": "2024-11-25",
-      "updatedAt": "2026-01-12",
       "configSnippet": {
         "mcpServers": {
           "postgres": {
@@ -486,12 +491,7 @@
             ]
           }
         }
-      },
-      "compatibility": [
-        "claude-code",
-        "cursor",
-        "vscode"
-      ]
+      }
     },
     {
       "type": "mcp-server",
@@ -500,7 +500,6 @@
       "description": "Browser automation for web scraping, screenshots, and testing",
       "author": "Anthropic",
       "githubUrl": "https://github.com/modelcontextprotocol/servers/tree/main/src/puppeteer",
-      "category": "browser",
       "tags": [
         "browser",
         "automation",
@@ -508,6 +507,17 @@
         "screenshots",
         "official"
       ],
+      "installCount": 0,
+      "trending": false,
+      "official": false,
+      "createdAt": "2024-11-25",
+      "updatedAt": "2026-01-18",
+      "compatibility": [
+        "claude-code",
+        "cursor",
+        "vscode"
+      ],
+      "category": "browser",
       "transport": [
         "stdio"
       ],
@@ -518,11 +528,6 @@
         "Fill forms",
         "Execute JavaScript"
       ],
-      "installCount": 0,
-      "trending": false,
-      "official": false,
-      "createdAt": "2024-11-25",
-      "updatedAt": "2026-01-18",
       "configSnippet": {
         "mcpServers": {
           "puppeteer": {
@@ -533,12 +538,7 @@
             ]
           }
         }
-      },
-      "compatibility": [
-        "claude-code",
-        "cursor",
-        "vscode"
-      ]
+      }
     },
     {
       "type": "mcp-server",
@@ -548,13 +548,23 @@
       "author": "Sentry",
       "authorUrl": "https://github.com/getsentry",
       "githubUrl": "https://github.com/getsentry/sentry-mcp",
-      "category": "monitoring",
       "tags": [
         "errors",
         "monitoring",
         "performance",
         "debugging"
       ],
+      "installCount": 0,
+      "trending": false,
+      "official": false,
+      "createdAt": "2025-02-15",
+      "updatedAt": "2026-01-18",
+      "compatibility": [
+        "claude-code",
+        "cursor",
+        "vscode"
+      ],
+      "category": "monitoring",
       "transport": [
         "stdio"
       ],
@@ -564,11 +574,6 @@
         "Performance data",
         "Stack trace analysis"
       ],
-      "installCount": 0,
-      "trending": false,
-      "official": false,
-      "createdAt": "2025-02-15",
-      "updatedAt": "2026-01-18",
       "configSnippet": {
         "mcpServers": {
           "sentry": {
@@ -582,12 +587,7 @@
             }
           }
         }
-      },
-      "compatibility": [
-        "claude-code",
-        "cursor",
-        "vscode"
-      ]
+      }
     },
     {
       "type": "mcp-server",
@@ -596,13 +596,23 @@
       "description": "Dynamic, reflective problem-solving through structured thought sequences",
       "author": "Anthropic",
       "githubUrl": "https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking",
-      "category": "ai-llm",
       "tags": [
         "reasoning",
         "thinking",
         "problem-solving",
         "official"
       ],
+      "installCount": 0,
+      "trending": false,
+      "official": false,
+      "createdAt": "2025-01-15",
+      "updatedAt": "2026-01-20",
+      "compatibility": [
+        "claude-code",
+        "cursor",
+        "vscode"
+      ],
+      "category": "ai-llm",
       "transport": [
         "stdio"
       ],
@@ -612,11 +622,6 @@
         "Branch exploration",
         "Hypothesis adjustment"
       ],
-      "installCount": 0,
-      "trending": false,
-      "official": false,
-      "createdAt": "2025-01-15",
-      "updatedAt": "2026-01-20",
       "configSnippet": {
         "mcpServers": {
           "sequential-thinking": {
@@ -627,12 +632,7 @@
             ]
           }
         }
-      },
-      "compatibility": [
-        "claude-code",
-        "cursor",
-        "vscode"
-      ]
+      }
     },
     {
       "type": "mcp-server",
@@ -641,13 +641,23 @@
       "description": "Read and send messages, manage channels in Slack workspaces",
       "author": "Anthropic",
       "githubUrl": "https://github.com/modelcontextprotocol/servers/tree/main/src/slack",
-      "category": "communication",
       "tags": [
         "slack",
         "messaging",
         "channels",
         "official"
       ],
+      "installCount": 0,
+      "trending": false,
+      "official": false,
+      "createdAt": "2024-12-01",
+      "updatedAt": "2026-01-10",
+      "compatibility": [
+        "claude-code",
+        "cursor",
+        "vscode"
+      ],
+      "category": "communication",
       "transport": [
         "stdio"
       ],
@@ -657,11 +667,6 @@
         "List users",
         "Search messages"
       ],
-      "installCount": 0,
-      "trending": false,
-      "official": false,
-      "createdAt": "2024-12-01",
-      "updatedAt": "2026-01-10",
       "configSnippet": {
         "mcpServers": {
           "slack": {
@@ -675,12 +680,7 @@
             }
           }
         }
-      },
-      "compatibility": [
-        "claude-code",
-        "cursor",
-        "vscode"
-      ]
+      }
     },
     {
       "type": "mcp-server",
@@ -689,13 +689,23 @@
       "description": "Read and write SQLite databases with full SQL support",
       "author": "Anthropic",
       "githubUrl": "https://github.com/modelcontextprotocol/servers/tree/main/src/sqlite",
-      "category": "database",
       "tags": [
         "database",
         "sqlite",
         "sql",
         "official"
       ],
+      "installCount": 0,
+      "trending": false,
+      "official": false,
+      "createdAt": "2024-11-25",
+      "updatedAt": "2026-01-12",
+      "compatibility": [
+        "claude-code",
+        "cursor",
+        "vscode"
+      ],
+      "category": "database",
       "transport": [
         "stdio"
       ],
@@ -705,11 +715,6 @@
         "Schema inspection",
         "Data export"
       ],
-      "installCount": 0,
-      "trending": false,
-      "official": false,
-      "createdAt": "2024-11-25",
-      "updatedAt": "2026-01-12",
       "configSnippet": {
         "mcpServers": {
           "sqlite": {
@@ -721,12 +726,7 @@
             ]
           }
         }
-      },
-      "compatibility": [
-        "claude-code",
-        "cursor",
-        "vscode"
-      ]
+      }
     },
     {
       "type": "mcp-server",
@@ -736,7 +736,6 @@
       "author": "Supabase",
       "authorUrl": "https://github.com/supabase",
       "githubUrl": "https://github.com/supabase-community/supabase-mcp",
-      "category": "database",
       "tags": [
         "supabase",
         "database",
@@ -744,6 +743,17 @@
         "storage",
         "edge-functions"
       ],
+      "installCount": 0,
+      "trending": false,
+      "official": false,
+      "createdAt": "2025-02-20",
+      "updatedAt": "2026-01-28",
+      "compatibility": [
+        "claude-code",
+        "cursor",
+        "vscode"
+      ],
+      "category": "database",
       "transport": [
         "stdio"
       ],
@@ -754,11 +764,6 @@
         "Storage management",
         "Edge function deployment"
       ],
-      "installCount": 0,
-      "trending": false,
-      "official": false,
-      "createdAt": "2025-02-20",
-      "updatedAt": "2026-01-28",
       "configSnippet": {
         "mcpServers": {
           "supabase": {
@@ -773,12 +778,7 @@
             }
           }
         }
-      },
-      "compatibility": [
-        "claude-code",
-        "cursor",
-        "vscode"
-      ]
+      }
     },
     {
       "type": "mcp-server",
@@ -788,13 +788,23 @@
       "author": "Tavily",
       "authorUrl": "https://github.com/tavily-ai",
       "githubUrl": "https://github.com/tavily-ai/tavily-mcp",
-      "category": "search",
       "tags": [
         "search",
         "web",
         "ai",
         "research"
       ],
+      "installCount": 0,
+      "trending": false,
+      "official": false,
+      "createdAt": "2025-02-01",
+      "updatedAt": "2026-01-18",
+      "compatibility": [
+        "claude-code",
+        "cursor",
+        "vscode"
+      ],
+      "category": "search",
       "transport": [
         "stdio"
       ],
@@ -804,11 +814,6 @@
         "Research mode",
         "Domain filtering"
       ],
-      "installCount": 0,
-      "trending": false,
-      "official": false,
-      "createdAt": "2025-02-01",
-      "updatedAt": "2026-01-18",
       "configSnippet": {
         "mcpServers": {
           "tavily": {
@@ -822,12 +827,7 @@
             }
           }
         }
-      },
-      "compatibility": [
-        "claude-code",
-        "cursor",
-        "vscode"
-      ]
+      }
     },
     {
       "type": "mcp-server",
@@ -837,13 +837,23 @@
       "author": "Vercel",
       "authorUrl": "https://github.com/vercel",
       "githubUrl": "https://github.com/vercel/mcp-server-vercel",
-      "category": "cloud",
       "tags": [
         "vercel",
         "deployment",
         "hosting",
         "edge"
       ],
+      "installCount": 0,
+      "trending": false,
+      "official": false,
+      "createdAt": "2025-02-10",
+      "updatedAt": "2026-01-22",
+      "compatibility": [
+        "claude-code",
+        "cursor",
+        "vscode"
+      ],
+      "category": "cloud",
       "transport": [
         "stdio"
       ],
@@ -854,11 +864,6 @@
         "Domain management",
         "Log streaming"
       ],
-      "installCount": 0,
-      "trending": false,
-      "official": false,
-      "createdAt": "2025-02-10",
-      "updatedAt": "2026-01-22",
       "configSnippet": {
         "mcpServers": {
           "vercel": {
@@ -872,12 +877,7 @@
             }
           }
         }
-      },
-      "compatibility": [
-        "claude-code",
-        "cursor",
-        "vscode"
-      ]
+      }
     }
   ]
 }

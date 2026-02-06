@@ -14,7 +14,7 @@
     "description": { "type": "string", "minLength": 1, "maxLength": 200 },
     "contentType": {
       "type": "string",
-      "enum": ["agent", "skill", "workflow", "rule", "template", "knowledge", "spec"]
+      "enum": ["mcp-server", "agent", "skill", "workflow", "rule", "template", "knowledge", "spec"]
     },
     "author": { "type": "string", "minLength": 1 },
     "authorUrl": { "type": "string", "format": "uri" },
@@ -31,7 +31,22 @@
     },
     "installCommand": { "type": "string" },
     "createdAt": { "type": "string" },
-    "updatedAt": { "type": "string" }
+    "updatedAt": { "type": "string" },
+    "longDescription": { "type": "string" },
+    "npmPackage": { "type": "string" },
+    "category": {
+      "type": "string",
+      "enum": ["ai-llm", "database", "browser", "cloud", "devtools", "communication", "file-system", "search", "monitoring", "security", "other"]
+    },
+    "transport": {
+      "type": "array",
+      "items": { "type": "string", "enum": ["stdio", "sse", "http"] }
+    },
+    "features": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "configSnippet": { "type": "object" }
   },
   "additionalProperties": false
 }
