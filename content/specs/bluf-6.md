@@ -14,7 +14,7 @@ compatibility:
   - cursor
 installCommand: npx @aidd.md/cli install spec bluf-6
 createdAt: 2025-06-01
-updatedAt: 2026-01-28
+updatedAt: 2026-02-07
 contentType: spec
 ---
 

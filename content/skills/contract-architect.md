@@ -16,7 +16,7 @@ compatibility:
   - cursor
 installCommand: npx @aidd.md/cli install skill contract-architect
 createdAt: 2025-06-15
-updatedAt: 2026-01-28
+updatedAt: 2026-02-07
 contentType: skill
 ---
 

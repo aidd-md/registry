@@ -13,7 +13,7 @@ compatibility:
   - claude-code
 installCommand: npx @aidd.md/cli install workflow analyze
 createdAt: 2025-06-01
-updatedAt: 2026-01-10
+updatedAt: 2026-02-07
 contentType: workflow
 ---
 

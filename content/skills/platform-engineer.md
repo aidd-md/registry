@@ -15,7 +15,7 @@ compatibility:
   - cursor
 installCommand: npx @aidd.md/cli install skill platform-engineer
 createdAt: 2025-08-15
-updatedAt: 2026-01-18
+updatedAt: 2026-02-07
 contentType: skill
 ---
 

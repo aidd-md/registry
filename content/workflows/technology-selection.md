@@ -14,7 +14,7 @@ compatibility:
   - claude-code
 installCommand: npx @aidd.md/cli install workflow technology-selection
 createdAt: 2025-09-01
-updatedAt: 2026-01-15
+updatedAt: 2026-02-07
 contentType: workflow
 ---
 

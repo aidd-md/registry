@@ -15,7 +15,7 @@ compatibility:
   - cursor
 installCommand: npx @aidd.md/cli install skill i18n-specialist
 createdAt: 2025-09-01
-updatedAt: 2026-01-12
+updatedAt: 2026-02-07
 contentType: skill
 ---
 

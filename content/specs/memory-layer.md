@@ -15,7 +15,7 @@ compatibility:
   - cursor
 installCommand: npx @aidd.md/cli install spec memory-layer
 createdAt: 2025-06-01
-updatedAt: 2026-02-01
+updatedAt: 2026-02-07
 contentType: spec
 ---
 

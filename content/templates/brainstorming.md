@@ -12,7 +12,7 @@ compatibility:
   - claude-code
 installCommand: npx @aidd.md/cli install template brainstorming
 createdAt: 2025-06-15
-updatedAt: 2026-01-18
+updatedAt: 2026-02-07
 contentType: template
 ---
 

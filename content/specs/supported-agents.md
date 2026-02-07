@@ -15,7 +15,7 @@ compatibility:
   - cursor
 installCommand: npx @aidd.md/cli install spec supported-agents
 createdAt: 2025-08-01
-updatedAt: 2026-02-01
+updatedAt: 2026-02-07
 contentType: spec
 ---
 

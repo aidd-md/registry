@@ -16,7 +16,7 @@ compatibility:
   - cursor
 installCommand: npx @aidd.md/cli install skill quality-engineer
 createdAt: 2025-08-01
-updatedAt: 2026-01-18
+updatedAt: 2026-02-07
 contentType: skill
 ---
 

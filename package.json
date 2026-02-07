@@ -7,7 +7,9 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "validate": "node scripts/validate.mjs",
-    "seed": "node scripts/seed.mjs"
+    "seed": "node scripts/seed.mjs",
+    "sync": "node scripts/sync.mjs",
+    "sync:apply": "node scripts/sync.mjs --apply"
   },
   "devDependencies": {
     "yaml": "^2.7.0",

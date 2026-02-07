@@ -14,7 +14,7 @@ compatibility:
   - cursor
 installCommand: npx @aidd.md/cli install spec version-protocol
 createdAt: 2025-07-01
-updatedAt: 2026-01-20
+updatedAt: 2026-02-07
 contentType: spec
 ---
 

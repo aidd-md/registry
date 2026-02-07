@@ -14,7 +14,7 @@ compatibility:
   - cursor
 installCommand: npx @aidd.md/cli install skill knowledge-architect
 createdAt: 2025-09-01
-updatedAt: 2026-01-15
+updatedAt: 2026-02-07
 contentType: skill
 ---
 

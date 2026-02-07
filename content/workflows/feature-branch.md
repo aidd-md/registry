@@ -13,7 +13,7 @@ compatibility:
   - claude-code
 installCommand: npx @aidd.md/cli install workflow feature-branch
 createdAt: 2025-07-15
-updatedAt: 2026-01-20
+updatedAt: 2026-02-07
 contentType: workflow
 ---
 

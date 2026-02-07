@@ -16,7 +16,7 @@ compatibility:
   - cursor
 installCommand: npx @aidd.md/cli install skill design-architect
 createdAt: 2025-07-01
-updatedAt: 2026-01-25
+updatedAt: 2026-02-07
 contentType: skill
 ---
 

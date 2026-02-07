@@ -15,7 +15,7 @@ compatibility:
   - cursor
 installCommand: npx @aidd.md/cli install rule interfaces
 createdAt: 2025-08-01
-updatedAt: 2026-01-20
+updatedAt: 2026-02-07
 contentType: rule
 ---
 
