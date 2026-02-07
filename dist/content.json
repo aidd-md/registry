@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updatedAt": "2026-02-07T07:06:53.076Z",
+  "updatedAt": "2026-02-07T07:07:37.015Z",
   "entries": [
     {
       "type": "content",
@@ -48,7 +48,7 @@
         "claude-code"
       ],
       "contentType": "workflow",
-      "markdownContent": "# Analyze Workflow\r\n\r\nSystematic codebase exploration and architecture mapping.",
+      "markdownContent": "# Analyze Workflow\n\nSystematic codebase exploration and architecture mapping.",
       "installCommand": "npx @aidd.md/cli install workflow analyze"
     },
     {
@@ -101,7 +101,7 @@
         "cursor"
       ],
       "contentType": "spec",
-      "markdownContent": "# ASDD Lifecycle\r\n\r\nAI-Spec-Driven Development: 8-phase lifecycle where every feature flows through specification before implementation.",
+      "markdownContent": "# ASDD Lifecycle\n\nAI-Spec-Driven Development: 8-phase lifecycle where every feature flows through specification before implementation.",
       "installCommand": "npx @aidd.md/cli install spec asdd-lifecycle"
     },
     {
@@ -152,7 +152,7 @@
         "claude-code"
       ],
       "contentType": "workflow",
-      "markdownContent": "# Audit Workflow\r\n\r\nSystematic security and quality auditing with actionable remediation steps.",
+      "markdownContent": "# Audit Workflow\n\nSystematic security and quality auditing with actionable remediation steps.",
       "installCommand": "npx @aidd.md/cli install workflow audit"
     },
     {
@@ -179,7 +179,7 @@
         "cursor"
       ],
       "contentType": "rule",
-      "markdownContent": "# Backend Rules\r\n\r\nAPI design patterns, error handling, validation, and database access conventions.",
+      "markdownContent": "# Backend Rules\n\nAPI design patterns, error handling, validation, and database access conventions.",
       "installCommand": "npx @aidd.md/cli install rule backend"
     },
     {
@@ -230,7 +230,7 @@
         "cursor"
       ],
       "contentType": "spec",
-      "markdownContent": "# BLUF-6 Protocol\r\n\r\nSix-part communication framework: Bottom Line > Analysis > Trade-offs > Optimal Path > Black Swans > Unknowns.",
+      "markdownContent": "# BLUF-6 Protocol\n\nSix-part communication framework: Bottom Line > Analysis > Trade-offs > Optimal Path > Black Swans > Unknowns.",
       "installCommand": "npx @aidd.md/cli install spec bluf-6"
     },
     {
@@ -254,7 +254,7 @@
         "claude-code"
       ],
       "contentType": "template",
-      "markdownContent": "# Brainstorming Template\r\n\r\nStructured ideation with divergent thinking, convergence, and solution evaluation.",
+      "markdownContent": "# Brainstorming Template\n\nStructured ideation with divergent thinking, convergence, and solution evaluation.",
       "installCommand": "npx @aidd.md/cli install template brainstorming"
     },
     {
@@ -306,7 +306,7 @@
         "cursor"
       ],
       "contentType": "rule",
-      "markdownContent": "# Code Style Rules\r\n\r\nNaming conventions, import ordering, file organization, and formatting standards.",
+      "markdownContent": "# Code Style Rules\n\nNaming conventions, import ordering, file organization, and formatting standards.",
       "installCommand": "npx @aidd.md/cli install rule code-style"
     },
     {
@@ -334,7 +334,7 @@
         "cursor"
       ],
       "contentType": "skill",
-      "markdownContent": "# Contract Architect\r\n\r\nDesign type-safe API contracts, schema validation, and integration boundaries.",
+      "markdownContent": "# Contract Architect\n\nDesign type-safe API contracts, schema validation, and integration boundaries.",
       "installCommand": "npx @aidd.md/cli install skill contract-architect"
     },
     {
@@ -362,7 +362,7 @@
         "cursor"
       ],
       "contentType": "skill",
-      "markdownContent": "# Data Architect\r\n\r\nDesign database schemas, write migrations, optimize queries, and configure ORMs.",
+      "markdownContent": "# Data Architect\n\nDesign database schemas, write migrations, optimize queries, and configure ORMs.",
       "installCommand": "npx @aidd.md/cli install skill data-architect"
     },
     {
@@ -465,7 +465,7 @@
         "claude-code"
       ],
       "contentType": "workflow",
-      "markdownContent": "# Design Workflow\r\n\r\nStructured design process from research through prototyping to developer handoff.",
+      "markdownContent": "# Design Workflow\n\nStructured design process from research through prototyping to developer handoff.",
       "installCommand": "npx @aidd.md/cli install workflow design"
     },
     {
@@ -493,7 +493,7 @@
         "cursor"
       ],
       "contentType": "skill",
-      "markdownContent": "# Design Architect\r\n\r\nDesign systems, color palettes, typography scales, layout composition, and motion design.",
+      "markdownContent": "# Design Architect\n\nDesign systems, color palettes, typography scales, layout composition, and motion design.",
       "installCommand": "npx @aidd.md/cli install skill design-architect"
     },
     {
@@ -545,7 +545,7 @@
         "claude-code"
       ],
       "contentType": "workflow",
-      "markdownContent": "# Documentation Workflow\r\n\r\nGenerate and maintain API docs, guides, changelogs, and README files.",
+      "markdownContent": "# Documentation Workflow\n\nGenerate and maintain API docs, guides, changelogs, and README files.",
       "installCommand": "npx @aidd.md/cli install workflow docs"
     },
     {
@@ -572,7 +572,7 @@
         "cursor"
       ],
       "contentType": "rule",
-      "markdownContent": "# Documentation Rules\r\n\r\nDocumentation structure, formatting standards, and ADR templates.",
+      "markdownContent": "# Documentation Rules\n\nDocumentation structure, formatting standards, and ADR templates.",
       "installCommand": "npx @aidd.md/cli install rule documentation"
     },
     {
@@ -626,7 +626,7 @@
         "cursor"
       ],
       "contentType": "skill",
-      "markdownContent": "# Experience Engineer\r\n\r\nOptimize frontend performance — Core Web Vitals, bundle splitting, lazy loading, caching strategies.",
+      "markdownContent": "# Experience Engineer\n\nOptimize frontend performance — Core Web Vitals, bundle splitting, lazy loading, caching strategies.",
       "installCommand": "npx @aidd.md/cli install skill experience-engineer"
     },
     {
@@ -678,7 +678,7 @@
         "claude-code"
       ],
       "contentType": "workflow",
-      "markdownContent": "# Feature Branch Workflow\r\n\r\nGit branching strategies, PR workflows, and merge conflict resolution.",
+      "markdownContent": "# Feature Branch Workflow\n\nGit branching strategies, PR workflows, and merge conflict resolution.",
       "installCommand": "npx @aidd.md/cli install workflow feature-branch"
     },
     {
@@ -705,7 +705,7 @@
         "cursor"
       ],
       "contentType": "rule",
-      "markdownContent": "# Frontend Rules\r\n\r\nReact patterns, CSS conventions, component architecture, and accessibility requirements.",
+      "markdownContent": "# Frontend Rules\n\nReact patterns, CSS conventions, component architecture, and accessibility requirements.",
       "installCommand": "npx @aidd.md/cli install rule frontend"
     },
     {
@@ -783,7 +783,7 @@
         "cursor"
       ],
       "contentType": "rule",
-      "markdownContent": "# Git Workflow Rules\r\n\r\nCommit message format, branching strategy, PR conventions, and merge protocols.",
+      "markdownContent": "# Git Workflow Rules\n\nCommit message format, branching strategy, PR conventions, and merge protocols.",
       "installCommand": "npx @aidd.md/cli install rule git-workflow"
     },
     {
@@ -809,7 +809,7 @@
         "cursor"
       ],
       "contentType": "rule",
-      "markdownContent": "# Global Rules\r\n\r\nImmutable framework constraints applied to all agents and tasks.",
+      "markdownContent": "# Global Rules\n\nImmutable framework constraints applied to all agents and tasks.",
       "installCommand": "npx @aidd.md/cli install rule global"
     },
     {
@@ -862,7 +862,7 @@
         "cursor"
       ],
       "contentType": "spec",
-      "markdownContent": "# Decision Heuristics\r\n\r\n10 operating principles for consistent, high-quality decision-making under uncertainty.",
+      "markdownContent": "# Decision Heuristics\n\n10 operating principles for consistent, high-quality decision-making under uncertainty.",
       "installCommand": "npx @aidd.md/cli install spec heuristics"
     },
     {
@@ -915,7 +915,7 @@
         "cursor"
       ],
       "contentType": "skill",
-      "markdownContent": "# i18n Specialist\r\n\r\nInternationalization workflows, translation management, locale configuration, and RTL support.",
+      "markdownContent": "# i18n Specialist\n\nInternationalization workflows, translation management, locale configuration, and RTL support.",
       "installCommand": "npx @aidd.md/cli install skill i18n-specialist"
     },
     {
@@ -969,7 +969,7 @@
         "cursor"
       ],
       "contentType": "skill",
-      "markdownContent": "# Interface Artisan\r\n\r\nBuild accessible, reusable UI components with design system consistency.",
+      "markdownContent": "# Interface Artisan\n\nBuild accessible, reusable UI components with design system consistency.",
       "installCommand": "npx @aidd.md/cli install skill interface-artisan"
     },
     {
@@ -1023,7 +1023,7 @@
         "cursor"
       ],
       "contentType": "rule",
-      "markdownContent": "# Interfaces Rules\r\n\r\nUI/UX design constraints for responsive layouts, color systems, and typography.",
+      "markdownContent": "# Interfaces Rules\n\nUI/UX design constraints for responsive layouts, color systems, and typography.",
       "installCommand": "npx @aidd.md/cli install rule interfaces"
     },
     {
@@ -1049,7 +1049,7 @@
         "cursor"
       ],
       "contentType": "skill",
-      "markdownContent": "# Knowledge Architect\r\n\r\nStructured documentation, ADRs, knowledge base management, and technical writing.",
+      "markdownContent": "# Knowledge Architect\n\nStructured documentation, ADRs, knowledge base management, and technical writing.",
       "installCommand": "npx @aidd.md/cli install skill knowledge-architect"
     },
     {
@@ -1129,7 +1129,7 @@
         "cursor"
       ],
       "contentType": "spec",
-      "markdownContent": "# Memory Layer\r\n\r\nPersistent, structured memory that accumulates project decisions, mistakes, and conventions across sessions.",
+      "markdownContent": "# Memory Layer\n\nPersistent, structured memory that accumulates project decisions, mistakes, and conventions across sessions.",
       "installCommand": "npx @aidd.md/cli install spec memory-layer"
     },
     {
@@ -1154,7 +1154,7 @@
         "claude-code"
       ],
       "contentType": "template",
-      "markdownContent": "# Migration Template\r\n\r\nMigration planning with dependency analysis, breaking change tracking, and rollback strategies.",
+      "markdownContent": "# Migration Template\n\nMigration planning with dependency analysis, breaking change tracking, and rollback strategies.",
       "installCommand": "npx @aidd.md/cli install template migration"
     },
     {
@@ -1233,7 +1233,7 @@
         "cursor"
       ],
       "contentType": "rule",
-      "markdownContent": "# Orchestrator Rules\r\n\r\nConstraints for agent selection, task classification, and multi-agent coordination.",
+      "markdownContent": "# Orchestrator Rules\n\nConstraints for agent selection, task classification, and multi-agent coordination.",
       "installCommand": "npx @aidd.md/cli install rule orchestrator"
     },
     {
@@ -1285,7 +1285,7 @@
         "cursor"
       ],
       "contentType": "skill",
-      "markdownContent": "# Platform Engineer\r\n\r\nCI/CD pipelines, containerization, orchestration, and infrastructure as code.",
+      "markdownContent": "# Platform Engineer\n\nCI/CD pipelines, containerization, orchestration, and infrastructure as code.",
       "installCommand": "npx @aidd.md/cli install skill platform-engineer"
     },
     {
@@ -1418,7 +1418,7 @@
         "claude-code"
       ],
       "contentType": "workflow",
-      "markdownContent": "# Product Workflow\r\n\r\nProduct development lifecycle from user stories to sprint planning.",
+      "markdownContent": "# Product Workflow\n\nProduct development lifecycle from user stories to sprint planning.",
       "installCommand": "npx @aidd.md/cli install workflow product"
     },
     {
@@ -1446,7 +1446,7 @@
         "cursor"
       ],
       "contentType": "skill",
-      "markdownContent": "# Quality Engineer\r\n\r\nTest strategies, TDD workflows, mocking patterns, and coverage optimization.",
+      "markdownContent": "# Quality Engineer\n\nTest strategies, TDD workflows, mocking patterns, and coverage optimization.",
       "installCommand": "npx @aidd.md/cli install skill quality-engineer"
     },
     {
@@ -1524,7 +1524,7 @@
         "claude-code"
       ],
       "contentType": "workflow",
-      "markdownContent": "# Review Workflow\r\n\r\nStructured code review with evidence-based feedback.",
+      "markdownContent": "# Review Workflow\n\nStructured code review with evidence-based feedback.",
       "installCommand": "npx @aidd.md/cli install workflow review"
     },
     {
@@ -1549,7 +1549,7 @@
         "claude-code"
       ],
       "contentType": "template",
-      "markdownContent": "# Routing Template\r\n\r\nMaps task types to appropriate templates and PAUS skill equivalents.",
+      "markdownContent": "# Routing Template\n\nMaps task types to appropriate templates and PAUS skill equivalents.",
       "installCommand": "npx @aidd.md/cli install template routing"
     },
     {
@@ -1576,7 +1576,7 @@
         "cursor"
       ],
       "contentType": "rule",
-      "markdownContent": "# Security Rules\r\n\r\nSecurity-first constraints covering OWASP, authentication, and input validation.",
+      "markdownContent": "# Security Rules\n\nSecurity-first constraints covering OWASP, authentication, and input validation.",
       "installCommand": "npx @aidd.md/cli install rule security"
     },
     {
@@ -1603,7 +1603,7 @@
         "cursor"
       ],
       "contentType": "skill",
-      "markdownContent": "# Security Architect\r\n\r\nThreat modeling, OWASP compliance, auth patterns, and vulnerability analysis.",
+      "markdownContent": "# Security Architect\n\nThreat modeling, OWASP compliance, auth patterns, and vulnerability analysis.",
       "installCommand": "npx @aidd.md/cli install skill security-architect"
     },
     {
@@ -1682,7 +1682,7 @@
         "cursor"
       ],
       "contentType": "spec",
-      "markdownContent": "# Supported Agents Registry\r\n\r\nRegistry of AI coding agents/editors with configuration paths, skill loading, and detection methods.",
+      "markdownContent": "# Supported Agents Registry\n\nRegistry of AI coding agents/editors with configuration paths, skill loading, and detection methods.",
       "installCommand": "npx @aidd.md/cli install spec supported-agents"
     },
     {
@@ -1710,7 +1710,7 @@
         "cursor"
       ],
       "contentType": "skill",
-      "markdownContent": "# System Architect\r\n\r\nDesign scalable system architectures with trade-off analysis, ADRs, and infrastructure planning.",
+      "markdownContent": "# System Architect\n\nDesign scalable system architectures with trade-off analysis, ADRs, and infrastructure planning.",
       "installCommand": "npx @aidd.md/cli install skill system-architect"
     },
     {
@@ -1815,7 +1815,7 @@
         "claude-code"
       ],
       "contentType": "workflow",
-      "markdownContent": "# Technology Selection Workflow\r\n\r\nStructured evaluation framework for choosing technologies with ADRs.",
+      "markdownContent": "# Technology Selection Workflow\n\nStructured evaluation framework for choosing technologies with ADRs.",
       "installCommand": "npx @aidd.md/cli install workflow technology-selection"
     },
     {
@@ -1840,7 +1840,7 @@
         "claude-code"
       ],
       "contentType": "workflow",
-      "markdownContent": "# Test Workflow\r\n\r\nEnd-to-end testing pipeline from strategy through execution to coverage reporting.",
+      "markdownContent": "# Test Workflow\n\nEnd-to-end testing pipeline from strategy through execution to coverage reporting.",
       "installCommand": "npx @aidd.md/cli install workflow test"
     },
     {
@@ -1867,7 +1867,7 @@
         "cursor"
       ],
       "contentType": "rule",
-      "markdownContent": "# Testing Rules\r\n\r\nTest coverage thresholds, naming conventions, and test file organization.",
+      "markdownContent": "# Testing Rules\n\nTest coverage thresholds, naming conventions, and test file organization.",
       "installCommand": "npx @aidd.md/cli install rule testing"
     },
     {
@@ -1945,7 +1945,7 @@
         "cursor"
       ],
       "contentType": "spec",
-      "markdownContent": "# Version Verification Protocol\r\n\r\n4-step process: Detect Project Stack > Load Context > Verify Docs > Anti-Legacy Filter.",
+      "markdownContent": "# Version Verification Protocol\n\n4-step process: Detect Project Stack > Load Context > Verify Docs > Anti-Legacy Filter.",
       "installCommand": "npx @aidd.md/cli install spec version-protocol"
     },
     {
